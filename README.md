@@ -5,8 +5,8 @@ Website archival script.
 - Supports basic recursive archiving based on keywords, no scoring algorithm implemented
 
 ## Requirements
-*Windows 10/11
-*Python 3.9.x or higher
+* Windows 10/11
+* Python 3.9.x or higher
 
 ## Switches
     crawler.py [-h] -f FOLDER -l LINKS [-k KEYWORDS] [-m LIMIT]
