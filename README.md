@@ -8,6 +8,10 @@ Website archival script.
 * Windows 10/11
 * Python 3.9.x or higher
 
+## Dependencies
+* pip install bs4
+* pip install requests
+
 ## Switches
     crawler.py [-h] -f FOLDER -l LINKS [-k KEYWORDS] [-m LIMIT]
 
