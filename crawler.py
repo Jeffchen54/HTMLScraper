@@ -131,7 +131,7 @@ def extract_from_urls(urls:queue.Queue, folder:str, max_limit:int, key_words:lis
             print("Processed {}".format(url))
             # Prevent rate limiting
             time.sleep(5)
-        except requests.exceptions as ex:
+        except (requests.ConnectionError, requests.RequestException, requests.HTTPError, requests.JSONDecodeError) as ex:
             template = "An exception of type {0} occurred. Arguments:\n{1!r}"
             message = template.format(type(ex).__name__, ex.args)
             print(message)
